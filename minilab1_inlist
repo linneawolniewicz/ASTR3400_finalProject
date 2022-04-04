@@ -1,4 +1,4 @@
-def binary_job():
+binary_job
 
       read_extra_binary_job_inlist1 = true
       extra_binary_job_inlist1_name = 'inlist_project'
@@ -7,7 +7,7 @@ def binary_job():
 
 
 
-def binary_controls():
+binary_controls
 
       read_extra_binary_controls_inlist1 = true
       extra_binary_controls_inlist1_name = 'inlist_project'
@@ -16,7 +16,7 @@ def binary_controls():
 
 
 
-def binary_pgstar():
+binary_pgstar
 
       read_extra_binary_pgstar_inlist1 = true
       extra_binary_pgstar_inlist1_name = 'inlist_project'
