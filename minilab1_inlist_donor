@@ -1,0 +1,100 @@
+&star_job
+
+  ! For the output in the beginning of the screenlog
+    show_log_description_at_start = .true.
+    show_net_species_info = .true.
+
+  ! Load ZAMS model
+    load_saved_model = .true.
+    load_model_filename = '../ZAMS_models/zams_14Msun.mod'
+
+  ! Get pgstar going
+    pgstar_flag = .true.
+
+  ! Pause before the code finishes running
+    pause_before_terminate = .true.
+
+/ ! end of star_job namelist
+
+
+&eos
+  ! eos options
+  ! see eos/defaults/eos.defaults
+
+/ ! end of eos namelist
+
+
+&kap
+  ! kap options
+  ! see kap/defaults/kap.defaults
+
+    use_Type2_opacities = .true.
+    Zbase = 0.02
+
+/ ! end of kap namelist
+
+
+&controls
+
+  ! Where to put the output files for the star
+    log_directory = 'LOGS1'
+
+  ! Store the screenlong from the star
+    extra_terminal_output_file = 'log1'
+ 
+  ! Settings for saving output and for screenlog
+    profile_interval = 1000
+    history_interval = 1
+    terminal_interval = 1
+    write_header_frequency = 10
+
+  ! Metallicity
+    initial_z = 0.006
+
+  ! Central abundance limit
+    xa_central_lower_limit_species(1) = 'he4'
+    xa_central_lower_limit(1) = 0.2d0
+
+
+  ! MIXING
+  ! 1) Semiconvection
+    use_ledoux_criterion = .true.
+    alpha_semiconvection = 1.0
+
+  ! 2) Thermohaline mixing
+    thermohaline_coeff = 0.0
+
+  ! 3) Convection
+    mixing_length_alpha = 2.0
+
+  ! 4) Overshooting (over all convective regions)
+    overshoot_scheme(1) = 'exponential'
+    overshoot_zone_type(1) = 'any'
+    overshoot_zone_loc(1) = 'any'
+    overshoot_bdy_loc(1) = 'top'
+    overshoot_f(1) = 0.0425d0   
+    overshoot_f0(1) = 0.001d0
+
+  ! WIND MASS LOSS
+  ! 1) Cool stars
+    cool_wind_RGB_scheme = 'Dutch'
+    cool_wind_AGB_scheme = 'Dutch'
+    Reimers_scaling_factor = 1d0
+
+  ! 2) Hot stars
+    hot_wind_scheme = 'Dutch'
+    Dutch_scaling_factor = 1d0
+
+
+  ! Resolution parameters
+  ! NB! For this lab to run smoothly, we have decreased the temporal and spatial resolution.
+  ! These settings are not recommended for reliable numerical results
+
+    varcontrol_target = 1e-2
+    time_delta_coeff = 1.5
+    mesh_delta_coeff = 1.5
+
+
+/ ! end of controls namelist
+
+
