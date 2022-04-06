@@ -88,11 +88,11 @@
 
   ! Resolution parameters
   ! NB! For this lab to run smoothly, we have decreased the temporal and spatial resolution.
-  ! These settings are not recommended for reliable numerical results
+  ! These settings are not recommended for reliable numerical results, so we will comment them out.
 
-    varcontrol_target = 1e-2
-    time_delta_coeff = 1.5
-    mesh_delta_coeff = 1.5
+  ! varcontrol_target = 1e-2
+  !  time_delta_coeff = 1.5
+  !  mesh_delta_coeff = 1.5
 
 
 / ! end of controls namelist
