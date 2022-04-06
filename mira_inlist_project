@@ -2,9 +2,10 @@
 
  ! What inlist to use for the first star  
    inlist_names(1) = 'inlist1' 
+   inlist_names(2) = 'inlist2'
 
  ! Whether to evolve both stars in the system or treat one as a point mass
-   evolve_both_stars = .false.
+   evolve_both_stars = .true.
 
 / ! end of binary_job namelist
 
@@ -12,9 +13,11 @@
 &binary_controls
          
  ! Initial conditions for the binary
-   m1 = 1.18d0  ! donor mass in Msun, changed to Mira value
-   m2 = 0.7d0 ! companion mass in Msun, changed to Mira value
-   initial_period_in_days = 181726.2d0, changed to Mira value
+   m1 = 1.18d0  ! donor mass in Msun of the Mira system
+   m2 = 0.7d0 ! companion mass in Msun of the Mira system
+   initial_period_in_days = 181726.2d0 ! initial period in days of the Mira system
+   initial_separation_in_Rsuns = 15052.3d0 ! initial separation of the Mira system (70 AU)
+   initial_eccentricity = 0.16d0 ! initial eccentricity of the Mira system
 
  ! Mass transfer efficiency controls
    mass_transfer_alpha = 0d0      ! fraction of mass lost from the vicinity of donor as fast wind
