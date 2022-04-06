@@ -12,9 +12,9 @@
 &binary_controls
          
  ! Initial conditions for the binary
-   m1 = 14.0d0  ! donor mass in Msun
-   m2 = 8.0d0 ! companion mass in Msun
-   initial_period_in_days = 20.0d0
+   m1 = 1.18d0  ! donor mass in Msun, changed to Mira value
+   m2 = 0.7d0 ! companion mass in Msun, changed to Mira value
+   initial_period_in_days = 181726.2d0, changed to Mira value
 
  ! Mass transfer efficiency controls
    mass_transfer_alpha = 0d0      ! fraction of mass lost from the vicinity of donor as fast wind
