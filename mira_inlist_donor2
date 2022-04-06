@@ -5,8 +5,8 @@
     show_net_species_info = .true.
 
   ! Load ZAMS model
-    load_saved_model = .true.
-    load_model_filename = '../ZAMS_models/zams_6Msun.mod'
+  ! load_saved_model = .true.
+  ! load_model_filename = '../ZAMS_models/zams_6Msun.mod'
 
   ! Get pgstar going
     pgstar_flag = .true.
