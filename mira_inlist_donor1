@@ -6,7 +6,7 @@
 
   ! Load ZAMS model
     load_saved_model = .true.
-    load_model_filename = '../ZAMS_models/zams_14Msun.mod'
+    load_model_filename = '../ZAMS_models/zams_1Msun.mod'
 
   ! Get pgstar going
     pgstar_flag = .true.
