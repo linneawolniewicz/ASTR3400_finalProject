@@ -6,7 +6,7 @@
 
   ! Load ZAMS model
     load_saved_model = .true.
-    load_model_filename = '../ZAMS_models/zams_1Msun.mod'
+    load_model_filename = '../ZAMS_models/zams_3Msun.mod'
 
   ! Get pgstar going
     pgstar_flag = .true.
@@ -49,7 +49,7 @@
     write_header_frequency = 10
 
   ! Metallicity
-    initial_z = 0.006
+    initial_z = -0.01 ! Average metallicity of thick disk stars (not sure what value to use for this)
 
   ! Central abundance limit
     xa_central_lower_limit_species(1) = 'he4'
@@ -88,11 +88,11 @@
 
   ! Resolution parameters
   ! NB! For this lab to run smoothly, we have decreased the temporal and spatial resolution.
-  ! These settings are not recommended for reliable numerical results, so we will comment them out.
+  ! These settings are not recommended for reliable numerical results
 
   ! varcontrol_target = 1e-2
-  !  time_delta_coeff = 1.5
-  !  mesh_delta_coeff = 1.5
+  ! time_delta_coeff = 1.5
+  ! mesh_delta_coeff = 1.5
 
 
 / ! end of controls namelist
