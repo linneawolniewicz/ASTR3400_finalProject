@@ -439,11 +439,11 @@ show_HR_classical_instability_strip = .false.
 show_HR_Mira_instability_region = .false.
 show_HR_WD_instabilities = .false.
 
-show_HR_target_box = .false.
+show_HR_target_box = .true. ! CHANGED TO TRUE
 HR_target_n_sigma = -3 ! -n means show sig 1..n
 HR_target_logL = 0
 HR_target_logL_sigma = 0
-HR_target_logT = 0
+HR_target_logT = 3.67 ! CHANGED FROM 0 TO 3.67, THE VALUE FOR T IN C AT RED GIANT STAGE 
 HR_target_logT_sigma = 0
 
 show_HR_annotation1 = .false.
@@ -458,7 +458,7 @@ HR_use_decorator = .false.
 
 
 ! file output
-HR_file_flag = .false.
+HR_file_flag = .true. ! CHANGED TO TRUE
 HR_file_dir = 'hr_png'
 HR_file_prefix = 'hr_'
 HR_file_interval = 11 ! output when `mod(model_number,HR_file_interval)==0`
