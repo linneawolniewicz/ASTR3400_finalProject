@@ -53,7 +53,7 @@
 
   ! Central abundance limit
     xa_central_lower_limit_species(1) = 'he4'
-    xa_central_lower_limit(1) = 0.2d0
+    xa_central_lower_limit(1) = 0.2
 
 
   ! MIXING
