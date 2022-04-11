@@ -13,11 +13,11 @@
 &binary_controls
          
  ! Initial conditions for the binary
-   m1 = 2.0d0  ! estimate of Mira A ZAMS 
-   m2 = 4.1d0 ! estimate of Mira B ZAMS 
-   initial_period_in_days = 181726.2d0 ! initial period in days of the Mira system
-   initial_separation_in_Rsuns = 15052.3d0 ! initial separation of the Mira system (70 AU)
-   initial_eccentricity = 0.16d0 ! initial eccentricity of the Mira system
+   m1 = 2.0  ! estimate of Mira A ZAMS 
+   m2 = 4.1 ! estimate of Mira B ZAMS 
+   initial_period_in_days = 1.817262d5 ! initial period in days of the Mira system
+   initial_separation_in_Rsuns = 1.50523d4 ! initial separation of the Mira system (70 AU)
+   initial_eccentricity = 0.16 ! initial eccentricity of the Mira system
 
  ! Mass transfer efficiency controls
    mass_transfer_alpha = 0d0      ! fraction of mass lost from the vicinity of donor as fast wind
