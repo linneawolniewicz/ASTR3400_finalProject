@@ -49,11 +49,19 @@
     write_header_frequency = 10
 
   ! Metallicity
-    initial_z = 0.0196 ! Average for the Sun
+    initial_z = 0.02d0 ! Average for the Sun
 
-  ! Central abundance limit
-    xa_central_lower_limit_species(1) = 'he4'
-    xa_central_lower_limit(1) = 0.2d0
+  ! Central abundance limit COMMENTED OUT
+  !  xa_central_lower_limit_species(1) = 'he4'
+  !  xa_central_lower_limit(1) = 0.2d0
+
+
+  ! MAX AGE all of this is default from MESA 
+   max_age = 1d36
+   max_age_in_days = -1
+   max_age_in_seconds = -1
+  
+   dt_years_for_steps_before_max_age = 1d6
 
 
   ! MIXING
