@@ -49,7 +49,7 @@
     write_header_frequency = 10
 
   ! Metallicity
-    initial_z =  0.0196 ! Solar metallicity
+    initial_z =  0.02d0 ! Solar metallicity
 
   ! Central abundance limit
     xa_central_lower_limit_species(1) = 'he4'
