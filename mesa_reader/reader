@@ -35,7 +35,7 @@ class UnknownFileTypeError(Exception):
         Exception.__init__(self, msg)
 
 
-class MesaData:
+class MesaData():
 
     """Structure containing data from a Mesa output file.
 
