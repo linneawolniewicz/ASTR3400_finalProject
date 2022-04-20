@@ -1,5 +1,9 @@
 &star_job
 
+      ! load a saved model
+      load_saved_model = .true.
+      saved_model_name = 'mira_b.mod'
+    
       read_extra_star_job_inlist1 = .true.
       extra_star_job_inlist1_name = 'inlist_donor2'
 
