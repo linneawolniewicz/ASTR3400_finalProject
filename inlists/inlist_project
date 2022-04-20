@@ -16,6 +16,10 @@
    
    ! m1 = 2.0d0  ! estimate of Mira A ZAMS 
    ! m2 = 4.1d0 ! estimate of Mira B ZAMS 
+   
+   ! in inlist1, we will load a saved model for star1
+   ! in inlist2, we will load a saved model for star2
+   
    initial_period_in_days = 181726.2d0 ! initial period in days of the Mira system
    initial_separation_in_Rsuns = 15052.3d0 ! initial separation of the Mira system (70 AU)
    initial_eccentricity = 0.16d0 ! initial eccentricity of the Mira system
